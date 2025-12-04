@@ -8,7 +8,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $year = $_POST['year'];
     $status = $_POST['status'];
 
-    // Upload file
     $fileName = "";
     if (!empty($_FILES['cover']['name'])) {
         $fileName = time() . "_" . basename($_FILES["cover"]["name"]);
